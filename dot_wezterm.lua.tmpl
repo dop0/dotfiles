@@ -9,14 +9,6 @@ config.default_prog = { "C:/Program Files/Git/bin/bash.exe", "-l" }
 config.default_prog = { "bash", "-l" }
 {{- end }}
 
-config.font = wezterm.font_with_fallback({
-  "JetBrainsMono NFM",
-{{- if eq .chezmoi.os "windows" }}
-  "Microsoft YaHei UI",
-{{- else }}
-  "Noto Sans CJK SC",
-{{- end }}
-})
 config.font_size = 12.5
 
 config.color_scheme = "OneDark (base16)"
